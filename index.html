@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="theme-color" content="#000000">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title> ROOKIS NFT</title>
+   <link rel="shortcut icon" href="images/Roo Logo.svg">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-jMJ5zb1svZLJWmR+g9xupTZBhUaPuY/PL/Gb1/gz+D6fcOdrLJAS0W+jrU6cQG6+V7sYXd33sOz7PQ4h4uBGCg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Include Bootstrap JavaScript and jQuery for Popup-->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+   <!--FAQS-->
+   <!-- Bootstrap CSS 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   Bootstrap JS 
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+
+   <script>
+      $(function () {
+         $('[data-toggle="tooltip"]').tooltip()
+      })
+   </script>
+
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         background-color: black;
+         font-family: sans-serif;
+         color: white;
+      }
+
+      .nav-bar {
+         position: sticky;
+         top: 0;
+         z-index: 10;
+         max-width: 100%;
+      }
+
+      .navbar {
+         /* background-image: linear-gradient(to right,#a517ba, #5f1782); */
+         /*linear-gradient(to right, #a517ba,#5f1782); */
+         padding: 0 !important;
+         width: 100%;
+      }
+
+      .navbar-brand img {
+         height: 40px;
+         padding-left: 20px;
+      }
+
+      .black-section {
+         background-color: black;
+         /* set the background color */
+         color: white;
+         /* set the text color to white */
+      }
+
+      .whitelist {
+         background-color: #CBE54E;
+         /* #B0fc38 #CBE54E #ccff02 #E2E603; /* set the background color */
+         color: black;
+         /*#D8FF00;/* #CFFF8D; */
+      }
+
+      .whitelist-button {
+         background-color: black;
+         color: #CBE54E;
+         font-weight: bolder;
+      }
+
+      .whitelist-button:hover {
+         background-color: white;
+         color: black;
+         transition: all 0.3s ease;
+         /*  transition ease-out duration-200 sm:hover:-translate-y-1 sm:hover:translate-x-1 sm:hover:scale-105
+         */
+      }
+
+      .social-icons {
+         color: white;
+         font-size: 2rem;
+      }
+
+      .social-icons:hover {
+         color: #CBE54E;
+         transition: all 0.3s ease;
+      }
+
+      .navbar-light {
+         color: white;
+      }
+
+      .navbar-nav-roo {
+         display: flex;
+         list-style: none;
+         padding-left: 0;
+         margin-bottom: 0;
+         justify-content: flex-end;
+      }
+
+      .navbar-nav-roo li {
+         padding: 0 10px;
+         display: block;
+      }
+
+      .navbar-nav-roo li a {
+         font-weight: 600;
+         float: right;
+      }
+
+      .nav-link {
+         padding-right: 0;
+         padding-left: 0;
+         color: white;
+      }
+
+      .nav-link:hover {
+         color: #CBE54E;
+      }
+
+      .tooltip {
+         background-color: #CBE54E;
+      }
+
+      .tooltip-inner {
+         background-color: #CBE54E;
+         color: black;
+      }
+
+      .accordion-button {
+         background: #CBE54E;
+         border-radius: 20px;
+      }
+   </style>
+
+</head>
+
+<body>
+   <!--
+   <div class="spinner-grow spinner-grow-sm"></div>
+   <div class="spinner-grow spinner-grow-sm"></div>
+   <div class="spinner-grow spinner-grow-sm"></div> -->
+   <section id="nav-bar">
+      <nav class="navbar  navbar-dark sticky-top align-content-end">
+         <!--- <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+               <nav class="navbar navbar-light"> navbar-expand-xl/navbar-expanded-lg this expands frm below lg and otherwise collapses-->
+         <a class="navbar-brand py-3" href="#"><img src="images/Roo Logo.png" alt="Logo"
+               class="mx-auto d-block color-0 align-top"></a>
+         <div class=" col-sm-6 d-flex flex-grow-1 justify-content-end">
+            <a class="bi bi-twitter me-3 social-icons" href="https://twitter.com/RookisNFT"></a>&nbsp;
+            <a class="bi bi-discord me-3 social-icons" href="https://discord.gg/dzbq9SQw"></a>&nbsp;
+            <a class="bi bi-instagram me-3 social-icons" href="https://www.instagram.com/rookisnft/"></a>&nbsp;
+         </div>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-light"></span>
+            </div>
+         </button>
+         <div class="collapse navbar-collapse navbar-light" id="navbarNav">
+            <ul class="navbar-nav-roo nav ml-auto mb-2 mb-lg-0 flex-column">
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="roomap.html">ROO MAP</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="docs.html">DOCS</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="tooltip" data-target="#myModal" data-bs-placement="left"
+                     title="Get Ready..coming soon!">STAKING</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="tooltip" data-target="#myModal" data-bs-placement="left"
+                     title="We are coming soon!">STORE</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="tooltip" data-target="#myModal" data-bs-placement="left"
+                     title="Coming Shortly!">ENTERTAINMENT</a>
+               </li>
+         </div>
+      </nav>
+   </section>
+   <!-- Test-->
+   <section>
+      <div class="container mb-100">
+         <div class="embed-responsive">
+            <video class="embed-responsive-item mx-auto w-100" autoplay muted loop preload="auto" id="myVideo">
+               <source src="images/Rookis Website BG.mp4" type="video/mp4">
+            </video>
+         </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+         <div class="row">
+            <table class="table table-borderless">
+               <tbody>
+                  <tr>
+                     <td class="col-8 justify-content-center black-section">
+                        <br><br>
+                        <h3> WELCOME TO THE ROOKIS NFT!! </h3>
+                        <br>
+                        <br>
+                        <h4>
+                           Don’t miss this exciting journey to explore the endless possibilities of the NFT Universe
+                           together.
+                           <br><br><br>
+                           As a member, In addition to gaining unique and rare digital collectibles, you will also
+                           benefit from innovative revenue sharing model that rewards our community for their ongoing
+                           support.
+                           <br>
+                        </h4>
+
+                        <br>
+                     </td>
+                     <td class="col-9 justify-content-center">
+                        <div class="row col-12 rounded">
+                           <table class="table bg-black table-borderless padding: 1rem">
+                              <tbody>
+                                 <tr>
+                                    <div class="pb-2 pr-2 col-6">
+                                       <td>
+                                       </td>
+                                       <td>
+                                          <img src="images/1.png" class="card-img-top rounded" alt="1">
+                                       </td>
+                                    </div>
+                                    <div class="pb-2 pl-2 col-4">
+                                       <td>
+                                          <img src="images/2.png" class="card-img-top rounded" alt="2">
+                                       </td>
+                                    </div>
+                                 </tr>
+                                 <tr>
+                                    <div class="pb-2 pr-2 col-6">
+                                       <td> </td>
+                                       <td>
+                                          <img src="images/3.png" class="card-img-top rounded" alt="3">
+                                       </td>
+                                    </div>
+                                    <div class="pt-2 pl-2 col-4">
+                                       <td>
+                                          <img src="images/4.png" class="card-img-top rounded" alt="4">
+                                       </td>
+                                    </div>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br>
+         <br>
+         <hr class="grey-line md-5">
+         <br>
+      </div>
+   </section>
+   <!--ROO MAP-->
+   <section>
+      <br>
+      <div class="container">
+         <div class="col text-center mx-auto">
+            <h4>ROO MAP</h4>
+            <br>
+            <h5>
+               Our Road map speaks volumes more than words.. To download our Roadmap, head to our
+               <a class="roomap-link" href="roomap.html">ROO MAP</a>.
+            </h5>
+            <br>
+            <br>
+            <br>
+         </div>
+         <button type="button" class="btn btn-popup mx-auto w-50 d-block rounded-right" data-toggle="modal"
+            data-target="#exampleModal">
+            <img src="images/TV.jpeg" class="img-fluid" alt="Clickable image">
+         </button>
+         <br>
+         <br>
+         <br>
+         <hr class="grey-line md-5">
+      </div>
+   </section>
+   <!--RECIPE OF ROOS-->
+   <section>
+      <div class="container">
+         <br>
+         <br>
+         <br>
+         <div class="row">
+
+            <table class="table table-borderless">
+               <tbody>
+                  <tr>
+                     <td class="col-6 justify-content-center black-section">
+                        <br>
+                        <h3> RECIPE OF ROOS!</h3>
+                        <br>
+                        <br>
+                        <h4 style="font-style: oblique;">
+                           Ingredients: <br>
+                        </h4>
+                        <h4>
+                           Clothes, Mouth, Eyes and a SECRET Ingredient!
+                        </h4>
+                        <br>
+                        <h4 style="font-style: oblique;">
+                           Process:
+                        </h4>
+                        <h4>
+                           Rookis is made/consists of ~130 traits in multiple layers.
+                        </h4>
+                        <br>
+                        <h4 style="font-style: oblique;">
+                           Tips:
+                        </h4>
+                        <h4>
+                           To know the secret ingredient - join the club.
+                        </h4>
+                        <br>
+                        </h4>
+                        <br>
+                        <br>
+                        <br>
+                     </td>
+                     <td class="col-3 justify-content-center">
+                        <img src="images/ROOKIS.gif" class="card-img-top img-fluid rounded" alt="GIF">
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="whitelist rounded mb-5">
+            <div class="p-4 m-auto row">
+               <div class="m-auto col-lg-3 col-12">
+                  <h3 class="join waitlist-title font-weight-bolder">COME JOIN US</h3>
+               </div>
+               <div class="m-auto col-lg-4 col-12 offset-lg-1">
+                  <p class="common-p mb-lg-0">The whitelist is running out. To get your Rookis, check out the
+                     collection on MagicEden.</p>
+               </div>
+               <div class="m-auto col-lg-3 col-12 justify-content-center">
+                  <a href="https://twitter.com/RookisNFT">
+                     <button class="whitelist-button p-2 rounded-right border-0" type="button">
+                        JOIN WHITELIST
+                     </button></a>
+               </div>
+            </div>
+         </div>
+         <br>
+         <hr class="grey-line md-5">
+      </div>
+   </section>
+
+   <!--OUR TEAM -->
+   <section>
+      <br><br>
+      <div class="container">
+         <div class="row">
+            <div class="col text-center mx-auto">
+               <h4>TEAM</h4>
+               <br>
+            </div>
+         </div>
+         <table class="table table-borderless">
+            <tbody>
+               <tr>
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/Arya.png" class="card-img-top" alt="Co-Founder1">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;">Arya &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href="https://twitter.com/AryaRookis"></a>
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-align text-black">CO-FOUNDER</p>
+                        </div>
+                     </div>
+                  </td>
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/Redpill.png" class="card-img-top" alt="Co-Founder2">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;">03Redpill &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href="https://twitter.com/03Redpill"></a>
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-dark text-align">CO-FOUNDER</p>
+                        </div>
+                     </div>
+                  </td>
+
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/Dev.png" class="card-img-top" alt="developer">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;">Yodha &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href="https://twitter.com/?lang=en"></a>
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-align text-black">DEVEOPER</p>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/CW.png" class="card-img-top" alt="Content Writer">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;">Siri &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href="https://twitter.com/djpratheek"></a>
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-align text-black">CONTENT WRITER</p>
+                        </div>
+                     </div>
+                  </td>
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/Artist1.png" class="card-img-top" alt="Artist1">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;">Spilled Colours &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href="https://twitter.com/colorz_rookis"></a>
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-align text-black">ARTIST</p>
+                        </div>
+                     </div>
+                  </td>
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/Artist2.png" class="card-img-top" alt="Artist2">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;"> &nbsp; Mad Strokes &nbsp;
+                              <a class="text" style="font-size: 1.5rem; "></a>
+                              <!-- <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"></a> -->
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-align text-black">ARTIST</p>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <br>
+         <br>
+         <br>
+         <hr class="grey-line md-5">
+      </div>
+   </section>
+   <!--FAQs section  -->
+   <section>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+         <div class="col text-center mx-auto">
+            <h4>FAQs?</h4>
+            <br>
+         </div>
+         <div class="accordion accordion-flush" id="accordionFlush">
+            <div class="accordion-item rounded">
+               <h4 class="accordion-header" id="flush-heading4">
+                  <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                     What is the vision of Rookis?
+                  </button>
+               </h4>
+               <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+                  data-bs-parent="#accordionFlush">
+                  <div class="accordion-body">
+                     <p>At Rookis, our vision is nothing short of extraordinary. We are driven to become the undisputed
+                        leader in the rapidly evolving world of NFTs on the SOLANA blockchain. Our goal is to create an
+                        unparalleled user experience that elevates the standard of NFT projects to new heights.</p>
+                     <p>
+                        We are relentlessly committed to delivering innovative and cutting-edge solutions that not only
+                        meet but exceed the expectations of our users. With a steadfast focus on technological
+                        excellence and user-centric design, we aspire to create an ecosystem that fosters creativity,
+                        encourages community involvement, and empowers creators to showcase their work in the best
+                        possible light.
+                     </p>
+                     <p>
+                        We firmly believe that our dedication to these principles will enable us to achieve our ultimate
+                        goal of being the number one NFT project on SOLANA. So join us on this exciting journey, and
+                        let's shape the future of NFTs together! </p>
+                     <p>
+                        To know more about our strategy, head to our
+                        <a class="roomap-link" href="RooMap.html">ROO MAP</a>.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <div class="accordion-item rounded">
+               <h2 class="accordion-header" id="flush-heading1">
+                  <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                     Why should I mint Rookis?
+                  </button>
+               </h2>
+               <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1"
+                  data-bs-parent="#accordionFlush">
+                  <div class="accordion-body">
+                     <h4>Mint the Rookis because it's an investment in your future & the future of the digital art
+                        world!</h4>
+                     <p>
+                        Rookis represents a versatile NFT that serves multi-utility purposes, including but
+                        not limited to generating revenue streams via Gaming, Fantasy Betting, and e-Commerce
+                        applications, all while enjoying the benefits of owning a unique and valuable piece of digital
+                        art.
+                     </p>
+                     <p>But that's not all – Rookis also offers a range of additional benefits, including access to
+                        exclusive events and rewards, as well as the opportunity to engage with a passionate and
+                        dedicated community of like-minded individuals.
+                     </p>
+                     <p>
+                        At Rookis, we believe that our success is directly tied to the success of our community. That's
+                        why
+                        we are committed to providing meaningful incentives to our holders through the revenue generated
+                        by
+                        the platform. By minting Rookis, you're not just buying an NFT – you're becoming a part of a
+                        thriving ecosystem that values creativity, innovation, and community.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <br style="margin-bottom: 0.5px; line-height: 0.2em;">
+            <div class="accordion-item rounded">
+               <h2 class="accordion-header" id="flush-heading2">
+                  <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                     Why should I mint and hold Rookis NFT now?
+                  </button>
+               </h2>
+               <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2"
+                  data-bs-parent="#accordionFlush">
+                  <div class="accordion-body">
+                     <p>
+
+                     </p>To realise the maximum benefit of an investment, one has to ape-in early
+                     as the community incentives such as staking rewards, etc are better in early stages due to halving
+                     strategy. There is revenue sharing mechanism for NFT holders in gaming as well. </p>
+                     <p>As the Rookis ecosystem continues to grow and evolve, these incentives will inevitably decrease
+                        due to halving. So the earlier you mint, the greater your potential rewards. In addition to
+                        these financial incentives, early minters also have the unique opportunity to shape the future
+                        of the Rookis platform and play a key role in its success.
+                     </p>
+                     <p>By minting now, you'll not only be securing a valuable asset with significant potential for
+                        growth, but you'll also be joining a passionate and dedicated community that is committed to
+                        driving innovation in the NFT space. </p>
+                     <p>So Don't wait Anymore! Mint your Rookis now and be a part of the future of digital ownership!
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <div class="accordion-item rounded">
+               <h5 class="accordion-header" id="flush-heading5">
+                  <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                     When is the mint and how much is the mint price?
+                  </button>
+               </h5>
+               <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
+                  data-bs-parent="#accordionFlush">
+                  <div class="accordion-body">
+                     <p>
+                        While we're still finalizing the details for our highly anticipated launch, rest assured that
+                        we'll be sharing updates very soon. Stay tuned for more information on the mint date and price..
+                     </p>
+                     <p> We promise it'll be worth the wait!
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <div class="accordion-item rounded">
+               <h3 class="accordion-header" id="flush-heading3">
+                  <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                     What is the speciality about our Gaming?
+                  </button>
+               </h3>
+               <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
+                  data-bs-parent="#accordionFlush">
+                  <div class="accordion-body">All games so far on Solana blockchain have been web based games and we are
+                     coming up with a mobile gaming application for ease of playing.</div>
+               </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr class="grey-line md-5">
+         </div>
+   </section>
+   <br>
+   <br>
+   <footer class="footer py-3">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-8">
+               <p>&copy; 2023 ROO LABS. All Rights Reserved. </p>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-end">
+               <p> Crafted with <a class="bi bi-suit-heart-fill text-white me-1" style="font-size: 1rem; color: black;"
+                     href="https://twitter.com/RookisNFT"></a>
+                  @ ROO LABS.
+               </p>
+               <!--  <a class="bi bi-twitter me-3" style="font-size: 2rem; color: black;" href="https://twitter.com/?lang=en"></a>
+                     <a class="bi bi-discord me-3" style="font-size: 2rem; color: darkblue" href="https://discord.com/"></a>
+                     -->
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
+      <div class="modal-dialog modal-xl" role="document">
+         <div class="modal-content">
+            <div class="bg-black">
+               <!--   <button type="button" class="close float-end" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button> -->
+               <img id="myimage" src="images/Roadmap.jpeg" class="roadmap img-thumbnail" alt="Roadmap">
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
