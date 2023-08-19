@@ -60,8 +60,6 @@
       }
 
       .navbar {
-         /* background-image: linear-gradient(to right,#a517ba, #5f1782); */
-         /*linear-gradient(to right, #a517ba,#5f1782); */
          padding: 0 !important;
          width: 100%;
       }
@@ -73,30 +71,7 @@
 
       .black-section {
          background-color: black;
-         /* set the background color */
          color: white;
-         /* set the text color to white */
-      }
-
-      .whitelist {
-         background-color: #CBE54E;
-         /* #B0fc38 #CBE54E #ccff02 #E2E603; /* set the background color */
-         color: black;
-         /*#D8FF00;/* #CFFF8D; */
-      }
-
-      .whitelist-button {
-         background-color: black;
-         color: #CBE54E;
-         font-weight: bolder;
-      }
-
-      .whitelist-button:hover {
-         background-color: white;
-         color: black;
-         transition: all 0.3s ease;
-         /*  transition ease-out duration-200 sm:hover:-translate-y-1 sm:hover:translate-x-1 sm:hover:scale-105
-         */
       }
 
       .social-icons {
@@ -155,18 +130,11 @@
          border-radius: 20px;
       }
    </style>
-
 </head>
 
 <body>
-   <!--
-   <div class="spinner-grow spinner-grow-sm"></div>
-   <div class="spinner-grow spinner-grow-sm"></div>
-   <div class="spinner-grow spinner-grow-sm"></div> -->
    <section id="nav-bar">
       <nav class="navbar  navbar-dark sticky-top align-content-end">
-         <!--- <nav class="navbar  navbar-expand-lg navbar-light bg-light">
-               <nav class="navbar navbar-light"> navbar-expand-xl/navbar-expanded-lg this expands frm below lg and otherwise collapses-->
          <a class="navbar-brand py-3" href="#"><img src="images/Roo Logo.png" alt="Logo"
                class="mx-auto d-block color-0 align-top"></a>
          <div class=" col-sm-6 d-flex flex-grow-1 justify-content-end">
@@ -188,24 +156,25 @@
                   <a class="nav-link" href="roomap.html">ROO MAP</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="docs.html">DOCS</a>
+                  <a class="nav-link" href="whitepaper.html">WHITE PAPER</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="staking.html">STAKING</a>
+                  <!-- <a class="nav-link" href="#" data-toggle="tooltip" data-target="#myModal" data-bs-placement="left"
+                     title="Get Ready..coming soon!">STAKING</a> -->
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="#" data-toggle="tooltip" data-target="#myModal" data-bs-placement="left"
-                     title="Get Ready..coming soon!">STAKING</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#" data-toggle="tooltip" data-target="#myModal" data-bs-placement="left"
-                     title="We are coming soon!">STORE</a>
+                     title="Get Ready..coming soon!">STORE</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="#" data-toggle="tooltip" data-target="#myModal" data-bs-placement="left"
                      title="Coming Shortly!">ENTERTAINMENT</a>
+                  <!--We are coming soon!-->
                </li>
          </div>
       </nav>
    </section>
-   <!-- Test-->
    <section>
       <div class="container mb-100">
          <div class="embed-responsive">
@@ -236,52 +205,26 @@
                            support.
                            <br>
                         </h4>
-
                         <br>
                      </td>
-                     <td class="col-9 justify-content-center">
-                        <div class="row col-12 rounded">
-                           <table class="table bg-black table-borderless padding: 1rem">
-                              <tbody>
-                                 <tr>
-                                    <div class="pb-2 pr-2 col-6">
-                                       <td>
-                                       </td>
-                                       <td>
-                                          <img src="images/1.png" class="card-img-top rounded" alt="1">
-                                       </td>
-                                    </div>
-                                    <div class="pb-2 pl-2 col-4">
-                                       <td>
-                                          <img src="images/2.png" class="card-img-top rounded" alt="2">
-                                       </td>
-                                    </div>
-                                 </tr>
-                                 <tr>
-                                    <div class="pb-2 pr-2 col-6">
-                                       <td> </td>
-                                       <td>
-                                          <img src="images/3.png" class="card-img-top rounded" alt="3">
-                                       </td>
-                                    </div>
-                                    <div class="pt-2 pl-2 col-4">
-                                       <td>
-                                          <img src="images/4.png" class="card-img-top rounded" alt="4">
-                                       </td>
-                                    </div>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </div>
+                     <td class="col-3">
+                        <!--<img src="images/New_Logo.mp4" class="card-img-top" alt="ABOUT"> -->
+                        <video class="mx-auto w-100" autoplay muted loop preload="auto" id="myVideo">
+                           <source src="images/Roo Logo.mp4" type="video/mp4">
+                        </video>
                      </td>
-                  </tr>
                </tbody>
             </table>
          </div>
-         <br>
-         <br>
-         <hr class="grey-line md-5">
-         <br>
+         </td>
+         </tr>
+         </tbody>
+         </table>
+      </div>
+      <br>
+      <br>
+      <hr class="grey-line md-5">
+      <br>
       </div>
    </section>
    <!--ROO MAP-->
@@ -299,82 +242,12 @@
             <br>
             <br>
          </div>
-         <button type="button" class="btn btn-popup mx-auto w-50 d-block rounded-right" data-toggle="modal"
+         <button type="button" class="btn btn-popup mx-auto w-75 d-block rounded-right" data-toggle="modal"
             data-target="#exampleModal">
-            <img src="images/TV.jpeg" class="img-fluid" alt="Clickable image">
+            <img src="images/Loading TV.png" class="img-fluid" alt="Clickable image">
          </button>
          <br>
          <br>
-         <br>
-         <hr class="grey-line md-5">
-      </div>
-   </section>
-   <!--RECIPE OF ROOS-->
-   <section>
-      <div class="container">
-         <br>
-         <br>
-         <br>
-         <div class="row">
-
-            <table class="table table-borderless">
-               <tbody>
-                  <tr>
-                     <td class="col-6 justify-content-center black-section">
-                        <br>
-                        <h3> RECIPE OF ROOS!</h3>
-                        <br>
-                        <br>
-                        <h4 style="font-style: oblique;">
-                           Ingredients: <br>
-                        </h4>
-                        <h4>
-                           Clothes, Mouth, Eyes and a SECRET Ingredient!
-                        </h4>
-                        <br>
-                        <h4 style="font-style: oblique;">
-                           Process:
-                        </h4>
-                        <h4>
-                           Rookis is made/consists of ~130 traits in multiple layers.
-                        </h4>
-                        <br>
-                        <h4 style="font-style: oblique;">
-                           Tips:
-                        </h4>
-                        <h4>
-                           To know the secret ingredient - join the club.
-                        </h4>
-                        <br>
-                        </h4>
-                        <br>
-                        <br>
-                        <br>
-                     </td>
-                     <td class="col-3 justify-content-center">
-                        <img src="images/ROOKIS.gif" class="card-img-top img-fluid rounded" alt="GIF">
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-         </div>
-         <div class="whitelist rounded mb-5">
-            <div class="p-4 m-auto row">
-               <div class="m-auto col-lg-3 col-12">
-                  <h3 class="join waitlist-title font-weight-bolder">COME JOIN US</h3>
-               </div>
-               <div class="m-auto col-lg-4 col-12 offset-lg-1">
-                  <p class="common-p mb-lg-0">The whitelist is running out. To get your Rookis, check out the
-                     collection on MagicEden.</p>
-               </div>
-               <div class="m-auto col-lg-3 col-12 justify-content-center">
-                  <a href="https://twitter.com/RookisNFT">
-                     <button class="whitelist-button p-2 rounded-right border-0" type="button">
-                        JOIN WHITELIST
-                     </button></a>
-               </div>
-            </div>
-         </div>
          <br>
          <hr class="grey-line md-5">
       </div>
@@ -395,9 +268,9 @@
                <tr>
                   <td class="col-4">
                      <div class="card bg-light border-0 p-4">
-                        <img src="images/Arya.png" class="card-img-top" alt="Co-Founder1">
+                        <img src="images/Black ROO.png" class="card-img-top" alt="Co-Founder1">
                         <div class="card-body text-center">
-                           <h5 class="card-title" style="font-size: 1rem; color: black;">Arya &nbsp;
+                           <h5 class="card-title" style="font-size: 1rem; color: black;"> Arya &nbsp;
                               <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
                                  href="https://twitter.com/AryaRookis"></a>
                            </h5>
@@ -408,11 +281,11 @@
                   </td>
                   <td class="col-4">
                      <div class="card bg-light border-0 p-4">
-                        <img src="images/Redpill.png" class="card-img-top" alt="Co-Founder2">
+                        <img src="images/Black ROO.png" class="card-img-top" alt="Co-Founder2">
                         <div class="card-body text-center">
-                           <h5 class="card-title" style="font-size: 1rem; color: black;">03Redpill &nbsp;
+                           <h5 class="card-title" style="font-size: 1rem; color: black;"> Redpill &nbsp;
                               <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
-                                 href="https://twitter.com/03Redpill"></a>
+                                 href="https://twitter.com/RedpillRookis"></a>
                            </h5>
                            <div class="card-subtitle"></div>
                            <p class="card-text text-dark text-align">CO-FOUNDER</p>
@@ -422,11 +295,12 @@
 
                   <td class="col-4">
                      <div class="card bg-light border-0 p-4">
-                        <img src="images/Dev.png" class="card-img-top" alt="developer">
+                        <img src="images/Black ROO.png" class="card-img-top" alt="developer">
                         <div class="card-body text-center">
-                           <h5 class="card-title" style="font-size: 1rem; color: black;">Yodha &nbsp;
+                           <h5 class="card-title" style="font-size: 1rem; color: black;"> R &nbsp;
+                              <a class="text" style="font-size: 1.5rem; "></a>
                               <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
-                                 href="https://twitter.com/?lang=en"></a>
+                                 href="https://twitter.com/TheguardianSage"></a>
                            </h5>
                            <div class="card-subtitle"></div>
                            <p class="card-text text-align text-black">DEVEOPER</p>
@@ -437,20 +311,22 @@
                <tr>
                   <td class="col-4">
                      <div class="card bg-light border-0 p-4">
-                        <img src="images/CW.png" class="card-img-top" alt="Content Writer">
+                        <img src="images/Black ROO.png" class="card-img-top" alt="Artist1">
                         <div class="card-body text-center">
-                           <h5 class="card-title" style="font-size: 1rem; color: black;">Siri &nbsp;
+                           <h5 class="card-title" style="font-size: 1rem; color: black;"> &nbsp; Mad Strokes &nbsp;
+                              <a class="text" style="font-size: 1.5rem; "></a>
                               <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
-                                 href="https://twitter.com/djpratheek"></a>
+                                 href="https://twitter.com/Mad_Rookis"></a>
+
                            </h5>
                            <div class="card-subtitle"></div>
-                           <p class="card-text text-align text-black">CONTENT WRITER</p>
+                           <p class="card-text text-align text-black">ARTIST</p>
                         </div>
                      </div>
                   </td>
                   <td class="col-4">
                      <div class="card bg-light border-0 p-4">
-                        <img src="images/Artist1.png" class="card-img-top" alt="Artist1">
+                        <img src="images/Black ROO.png" class="card-img-top" alt="Artist2">
                         <div class="card-body text-center">
                            <h5 class="card-title" style="font-size: 1rem; color: black;">Spilled Colours &nbsp;
                               <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
@@ -463,14 +339,73 @@
                   </td>
                   <td class="col-4">
                      <div class="card bg-light border-0 p-4">
-                        <img src="images/Artist2.png" class="card-img-top" alt="Artist2">
+                        <img src="images/Black ROO.png" class="card-img-top" alt="Artist3">
                         <div class="card-body text-center">
-                           <h5 class="card-title" style="font-size: 1rem; color: black;"> &nbsp; Mad Strokes &nbsp;
-                              <a class="text" style="font-size: 1.5rem; "></a>
-                              <!-- <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"></a> -->
+                           <h5 class="card-title" style="font-size: 1rem; color: black;">Bad Artistry &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href=" https://twitter.com/bad_artist29?t=TPb4WNqpRdid0MEwdOId9g&s=08"></a>
                            </h5>
                            <div class="card-subtitle"></div>
                            <p class="card-text text-align text-black">ARTIST</p>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/Black ROO.png" class="card-img-top" alt="Marketing Mgr">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;">Matty &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href="https://twitter.com/Matty_Solana"></a>
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-align text-black">MARKETING/COMMUNITY MANAGER</p>
+                        </div>
+                     </div>
+                  </td>
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/Black ROO.png" class="card-img-top" alt="CollabMgr">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;"> Tonⓨ.Eth • Sol &nbsp; &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href="https://twitter.com/TonyyySol"></a>
+                              <!-- <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"></a> -->
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-align text-black">COLLAB MANAGER</p>
+                        </div>
+                     </div>
+                  </td>
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/Black ROO.png" class="card-img-top" alt=" Mod">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;">Secret Alpha &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href=" https://twitter.com/secretalpha03"></a>
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-align text-black">MOD</p>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td class="col-4">
+                     <div class="card bg-light border-0 p-4">
+                        <img src="images/Black ROO.png" class="card-img-top" alt="Consultant">
+                        <div class="card-body text-center">
+                           <h5 class="card-title" style="font-size: 1rem; color: black;">Orange Robes &nbsp;
+                              <a class="bi bi-twitter" style="font-size: 1.5rem; color: black;"
+                                 href="https://twitter.com/OrangeRobes"></a>
+                           </h5>
+                           <div class="card-subtitle"></div>
+                           <p class="card-text text-align text-black">CONSULTANT</p>
                         </div>
                      </div>
                   </td>
@@ -540,7 +475,7 @@
                         world!</h4>
                      <p>
                         Rookis represents a versatile NFT that serves multi-utility purposes, including but
-                        not limited to generating revenue streams via Gaming, Fantasy Betting, and e-Commerce
+                        not limited to generating revenue streams via Reading, Gaming and e-Commerce
                         applications, all while enjoying the benefits of owning a unique and valuable piece of digital
                         art.
                      </p>
@@ -550,10 +485,9 @@
                      </p>
                      <p>
                         At Rookis, we believe that our success is directly tied to the success of our community. That's
-                        why
-                        we are committed to providing meaningful incentives to our holders through the revenue generated
-                        by
-                        the platform. By minting Rookis, you're not just buying an NFT – you're becoming a part of a
+                        why we are committed to providing meaningful incentives to our holders through the revenue
+                        generated
+                        by the platform. By minting Rookis, you're not just buying an NFT – you're becoming a part of a
                         thriving ecosystem that values creativity, innovation, and community.
                      </p>
                   </div>
@@ -574,7 +508,7 @@
 
                      </p>To realise the maximum benefit of an investment, one has to ape-in early
                      as the community incentives such as staking rewards, etc are better in early stages due to halving
-                     strategy. There is revenue sharing mechanism for NFT holders in gaming as well. </p>
+                     strategy. There is revenue sharing mechanism for NFT holders in reading, gaming as well. </p>
                      <p>As the Rookis ecosystem continues to grow and evolve, these incentives will inevitably decrease
                         due to halving. So the earlier you mint, the greater your potential rewards. In addition to
                         these financial incentives, early minters also have the unique opportunity to shape the future
@@ -613,13 +547,19 @@
                <h3 class="accordion-header" id="flush-heading3">
                   <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse"
                      data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
-                     What is the speciality about our Gaming?
+                     What is the speciality about our Bookwormer?
                   </button>
                </h3>
                <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
                   data-bs-parent="#accordionFlush">
-                  <div class="accordion-body">All games so far on Solana blockchain have been web based games and we are
-                     coming up with a mobile gaming application for ease of playing.</div>
+                  <div class="accordion-body">B
+                     Through our revolutionary "Read to Earn" approach on the Solana blockchain, every page you turn
+                     becomes a stepping stone towards accumulating SOL based rewards.
+                     It's a world where every page turned brings you not just knowledge but tangible value, fostering a
+                     community of readers who are both intellectually and financially enriched.
+
+                     "Welcome to a world where reading doesn't just expand your mind, but also your wallet."
+                  </div>
                </div>
             </div>
             <br>
@@ -656,7 +596,7 @@
                <!--   <button type="button" class="close float-end" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                </button> -->
-               <img id="myimage" src="images/Roadmap.jpeg" class="roadmap img-thumbnail" alt="Roadmap">
+               <img id="myimage" src="images/Roadmap.png" class="roadmap img-thumbnail" alt="Roadmap">
             </div>
          </div>
       </div>
